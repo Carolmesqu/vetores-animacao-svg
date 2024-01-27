@@ -1,6 +1,7 @@
 <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 980" width="1400" height="980">
 	<title>praia-caiaques-ai</title>
 	<defs>
+	
 		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,-213.138,304.483,0,357,973)">
 			<stop offset=".189" stop-color="#ffead4"/>
 			<stop offset=".898" stop-color="#ffdfa8"/>
@@ -128,6 +129,37 @@
 		.s36 { fill: #7fa7c3 } 
 		.s37 { opacity: .2;fill: #4b7cab } 
 		.s38 { fill: #f7ede4 } 
+	</style>
+	<style>
+		#caiaque-1, #caiaque-2 {
+			animation: movimento-caiaque-1e2 2.5s ease-in-out infinite alternate;
+		}
+
+		#caiaque-3, #caiaque-4 {
+			animation: movimento-caiaque-3e4 2.5s ease-in-out infinite alternate;
+		}
+
+		#caiaque-5 {
+			animation: movimento-caiaque-5 2.5s ease-in-out infinite alternate;
+		}
+
+		@keyframes movimento-caiaque-1e2 {
+			to {
+				transform: translate(4px, -6px)
+			}
+		}
+
+		@keyframes movimento-caiaque-3e4 {
+			to {
+				transform: translate(-6px, 2px)
+			}
+		}
+
+		@keyframes movimento-caiaque-5 {
+			to {
+				transform: translate(3px, -8px)
+			}
+		}
 	</style>
 	<g id="areia">
 		<g id="areia">
