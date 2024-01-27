@@ -223,6 +223,52 @@ vantagens e desvantagens de cada um.
 
 ------------------------ // ------------------------
 
+Ricardo está usando a propriedade de animação 
+keyframe para animar uma bolinha com CSS. 
+Atualmente o código está assim:
+
+<svg width="200" height="200">
+ <style>
+  .bolinha {
+         animation: loopBolinha 1s;
+       }
+
+   @keyframes loopBolinha {
+         to {
+           transform: translate(40px);
+         }
+       }
+ </style>
+
+ <circle class="bolinha" cx="100" cy="100" r="40" 
+ fill="red" />
+ </svg>
+
+Ao executarmos esse código no navegador, o que 
+deverá acontecer?
+
+A bolinha se move por um espaço de 40px da 
+esquerda para a direita e volta para a posição 
+original.
+
+A propriedade translate move o elemento de um 
+ponto a outro, baseado nos valores que passamos 
+como parâmetro da propriedade:
+
+elemento {
+  transform: translate(valor eixo X, valor eixo Y);
+}
+
+Se quisermos mover o elemento somente no eixo X, 
+podemos declarar somente o primeiro valor: 
+transform: translate(200px);. Se quisermos mover 
+em ambos os eixos, declaramos o X e o Y: 
+transform: translate(200px, 200px);. Para mover 
+somente no eixo Y, precisamos declarar o eixo X 
+como zero: transform: translate(0, 200px);
+
+------------------------ // ------------------------
+
 
 
 ------------------------ // ------------------------
